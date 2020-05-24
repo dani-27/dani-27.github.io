@@ -178,8 +178,8 @@ section p{
     to{transform: rotate(180deg) translateX(240px) rotate(-360deg)}
 }
 @keyframes orbit-3{
-    from{transform: rotate(270deg) translateX(310px) rotate(0deg)}
-    to{transform: rotate(630deg) translateX(310px) rotate(-360deg)}
+    from{transform: rotate(270deg) translateX(300px) rotate(0deg)}
+    to{transform: rotate(630deg) translateX(300px) rotate(-360deg)}
 }
 
 /* About Us Section */
