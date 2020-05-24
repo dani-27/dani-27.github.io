@@ -1,0 +1,233 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body (All HTML) */
+body{
+    font-family: "Montserrat";
+    background: #fff;
+    color: #000;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container */
+.container{
+    width: 100%;
+    height: 100%;
+    /*overflow-y: scroll;*/
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    /*scroll-snap-type: y mandatory;*/ /*(BORA SAID REMOVE THIS)*/
+}
+
+/* Navigation Bar */
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar:hover{
+    background: #f8f8f8;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 70%;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    font-size: 2rem;
+    justify-content: left;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+}
+
+.navbar ul li{
+    margin: 0, 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #1abc9c;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover{
+    color: #e67e22;
+}
+
+/*General Section*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+section h1{
+    font-size: 5rem;
+}
+
+section h2{
+    font-size: 3.5rem;
+}
+
+section p{
+    font-size: 1.5rem;   
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: center;*/
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+#slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*transform: translateX(-10%);*/
+    width: 40%;
+}
+
+#slogan h1{
+    font-size: 3.75rem;
+    z-index: 1;
+}
+
+/* Home Section - Logo */
+.logo-container{
+    /*width: 700px;
+    height: 700px;*/
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*transform: translateX(-8%);*/
+}
+
+.star{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7F7FD5, #86A8E7, #91EAE4);
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbit{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(225deg, #f12711, #f5af19);
+    z-index: 2;
+}
+
+/* Logo Animations */
+.orbit-1{animation: orbit-1 15s linear infinite;}
+.orbit-2{animation: orbit-2 20s linear infinite;}
+.orbit-3{animation: orbit-3 25s linear infinite;}
+@keyframes orbit-1{
+    from{transform: rotate(0deg) translateX(185px) rotate(0deg)}
+    to{transform: rotate(360deg) translateX(185px) rotate(-360deg)}
+}
+@keyframes orbit-2{
+    from{transform: rotate(540deg) translateX(255px) rotate(0deg)}
+    to{transform: rotate(180deg) translateX(255px) rotate(-360deg)}
+}
+@keyframes orbit-3{
+    from{transform: rotate(270deg) translateX(325px) rotate(0deg)}
+    to{transform: rotate(630deg) translateX(325px) rotate(-360deg)}
+}
+
+/* About Us Section */
+#about, #game{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box, .box2{
+    width: 40%;
+    /*height: 40%;*/
+    border-radius: 20px;
+    box-shadow: -10px 15px #2c3e50;
+    text-align: justify;
+    padding: 30px;
+}
+
+.box{
+    background: linear-gradient(-45deg, #7F7FD5, #86A8E7, #91EAE4);
+}
+
+.box h2, .box p, .box2 h2, .box2 p{
+    color: #fff;
+}
+
+/* The Game Section */
+.box2{
+    background: linear-gradient(-45deg, #f12711, #f5af19);
+}
+
+.image{
+    width: 40%;
+    height: 60%;
+    background-image: url(city.png);
+    background-repeat: no-repeat;
+    /*background-size: 100% 100%;*/
+}
+
+/* Contact Us Section */
+#contact_link:link, #contact_link:visited, #contact_link:active{
+    text-decoration-line: none;
+    text-decoration-color: #1abc9c;
+    color: #1abc9c;
+}
+
+#contact_link:hover{
+    text-decoration-line: none;
+    text-decoration-color: #e67e22;
+    color: #e67e22;
+}
