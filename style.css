@@ -146,8 +146,8 @@ section p{
 }
 
 .star{
-    width: 240px;
-    height: 240px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     background: linear-gradient(45deg, #7F7FD5, #86A8E7, #91EAE4);
     z-index: 1;
