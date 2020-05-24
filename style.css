@@ -145,8 +145,8 @@ section p{
 }
 
 .star{
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     background: linear-gradient(45deg, #7F7FD5, #86A8E7, #91EAE4);
     z-index: 1;
@@ -170,16 +170,16 @@ section p{
 .orbit-2{animation: orbit-2 20s linear infinite;}
 .orbit-3{animation: orbit-3 25s linear infinite;}
 @keyframes orbit-1{
-    from{transform: rotate(0deg) translateX(185px) rotate(0deg)}
-    to{transform: rotate(360deg) translateX(185px) rotate(-360deg)}
+    from{transform: rotate(0deg) translateX(170px) rotate(0deg)}
+    to{transform: rotate(360deg) translateX(170px) rotate(-360deg)}
 }
 @keyframes orbit-2{
-    from{transform: rotate(540deg) translateX(255px) rotate(0deg)}
-    to{transform: rotate(180deg) translateX(255px) rotate(-360deg)}
+    from{transform: rotate(540deg) translateX(240px) rotate(0deg)}
+    to{transform: rotate(180deg) translateX(240px) rotate(-360deg)}
 }
 @keyframes orbit-3{
-    from{transform: rotate(270deg) translateX(325px) rotate(0deg)}
-    to{transform: rotate(630deg) translateX(325px) rotate(-360deg)}
+    from{transform: rotate(270deg) translateX(310px) rotate(0deg)}
+    to{transform: rotate(630deg) translateX(310px) rotate(-360deg)}
 }
 
 /* About Us Section */
