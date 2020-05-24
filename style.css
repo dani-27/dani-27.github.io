@@ -167,9 +167,9 @@ section p{
 }
 
 /* Logo Animations */
-.orbit-1{animation: orbit-1 15s linear infinite;}
+/*.orbit-1{animation: orbit-1 15s linear infinite;}
 .orbit-2{animation: orbit-2 20s linear infinite;}
-.orbit-3{animation: orbit-3 25s linear infinite;}
+.orbit-3{animation: orbit-3 25s linear infinite;}*/
 @keyframes orbit-1{
     from{transform: rotate(0deg) translateX(170px) rotate(0deg)}
     to{transform: rotate(360deg) translateX(170px) rotate(-360deg)}
